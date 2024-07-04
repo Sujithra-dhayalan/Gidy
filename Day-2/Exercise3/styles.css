@@ -1,0 +1,25 @@
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.box1{
+    padding: 10px;
+    border: 2px solid red;
+    margin: 10px;
+    background-color: lightcoral;
+}
+
+.box2{
+    padding: 20px;
+    border: 4px dotted green;
+    margin: 20PX;
+    background-color: lightgreen;
+}
+
+.box3{
+    padding: 30px;
+    border: 6px dotted blue;
+    margin: 30px; 
+    background-color: lightblue;   
+}

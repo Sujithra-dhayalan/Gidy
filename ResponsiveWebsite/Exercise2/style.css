@@ -27,9 +27,7 @@ h1{
 }
 
 .card{
-    display: flex;
-    
-    
+    display: flex;    
 }
 
 .box{
@@ -40,4 +38,41 @@ h1{
 
 footer{
     float: right;
+}
+
+@media (min-width:319px) and (max-width:480px) {
+    .main{
+        margin: 40px;
+    }
+    .logo{
+        width: 170px;
+        height: 40px;
+    }
+    
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .title-image{
+        width: 100%;
+        height: 200px;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+    .box{
+        margin: 0px;
+    }
+    
 }

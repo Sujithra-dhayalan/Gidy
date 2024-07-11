@@ -1,0 +1,74 @@
+.container {
+    color: white;
+    border: 5px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    
+    /* Code Flex */
+}
+
+/*
+Select all the elements that are the direct
+children of the .container class.
+*/
+
+
+
+.red {
+    background-color: #eb4d4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font:bold;
+    font-family: sans-serif;  
+}
+
+.orange {
+    background-color: #f0932b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.yellow {
+    background-color: #f6e58d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.green {
+    background-color: #6ab04c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.blue {
+    background-color: #4834d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.indigo {
+    background-color: #30336b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.purple {
+    background-color: #be2edd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}

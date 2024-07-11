@@ -1,0 +1,48 @@
+body{
+    font-family: "Poppins";
+    margin: 10px;
+}
+
+.main{
+    display: inline;
+    vertical-align: top;
+}
+.logo{
+    height: 80px; 
+    width: 250px;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.tile-image{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.card-title{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 25px;
+}
+
+.card-text{
+    display:inline-block;
+
+}
+
+
+
+.right card{
+    display: inline-block;
+}
+
+footer{
+    float: right;
+}

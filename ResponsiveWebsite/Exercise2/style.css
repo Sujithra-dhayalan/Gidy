@@ -1,46 +1,41 @@
-body{
-    font-family: "Poppins";
-    margin: 10px;
+*{
+    background-color: #faf9f6;
+    font-family: poppins;
 }
 
 .main{
-    display: inline;
-    vertical-align: top;
+    margin: 20px;
 }
+
 .logo{
-    height: 80px; 
-    width: 250px;
+    width: 400px;
+    height: 100px;
 }
 
 h1{
-    font-size: 50px;
-    text-align: center;
+    font-size: 78px;
 }
 
-.tile-image{
+.title-image{
     height: 200px;
     width: 200px;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
 }
 
-.card-title{
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    margin: 25px;
+.container{
+    display: flex;
+    
 }
 
-.card-text{
-    display:inline-block;
-
+.card{
+    display: flex;
+    
+    
 }
 
-
-
-.right card{
-    display: inline-block;
+.box{
+    margin-left: 35px;
+    margin-right: 35px;
+    
 }
 
 footer{

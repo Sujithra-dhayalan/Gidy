@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
-    margin: 0;
+    margin-left: 20px;
     padding: 0;
-    font-family: "Ga Maamli", sans-serif;
+    font-family: "Jim Nightshade", cursive;
 }
 
 body::before {
@@ -24,20 +24,45 @@ body::before {
 .main {
     margin: 20px;
     display: inline-block;
-    
+
+}
+
+.nav{
+    display: flex;
+
 }
 
 h1 {
-    color: white;
-    font-family: "Oswald", Helvetica Neue;
+    color: bisque;
+    font-family: "Festive", cursive;
+    letter-spacing: 4px;
+    margin-top: 30px;
+   
+}
+
+.owl {
+    height: 100px;
+    
 }
 
 .pen {
     height: 100px;
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 40px;
     cursor: pointer;
+    animation: upAndDown 2s ease-in-out infinite;
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
 }
 
 .logging {
@@ -63,7 +88,9 @@ h1 {
     width: 400px;
     border: none;
     background-color: rgba(255, 255, 255, 0.4);
-    font-family: "Ga Maamli", sans-serif;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 100000000000px;
+    font-size: 20px;
 }
 
 #description {
@@ -73,7 +100,9 @@ h1 {
     border: none;
     height: 500px;
     background-color: rgba(255, 255, 255, 0.4);
-    font-family: "Ga Maamli", sans-serif;   
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 100000000000px;
+    font-size: 20px;
 }
 
 #date:focus,
@@ -87,6 +116,7 @@ h1 {
     bottom: 70px;
     left: 400px;
     cursor: pointer;
+    animation: upAndDown 2s ease-in-out infinite;
 }
 
 .bottles {
@@ -106,24 +136,28 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
 }
-.display{
+
+.display {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-align: center  ;
+    text-align: center;
     margin: 20px;
     padding: 10px;
     width: 400px;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
+    cursor: pointer;
+    color:#d8ba89;
 }
 
-.display h2{
+.display h2 {
     padding: 0;
     margin: 0;
 }
-.envelope{
+
+.envelope {
     width: 350px;
 }

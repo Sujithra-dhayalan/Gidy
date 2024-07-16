@@ -5,7 +5,7 @@ var curtain = document.querySelector(".curtain");
 
 function checkPassword() {
 
-    if (password.value === "Harry") {
+    if (password.value === "Harry Potter") {
         gryffindor.classList.add("show")
     } else {
         alert("Incorrect password");

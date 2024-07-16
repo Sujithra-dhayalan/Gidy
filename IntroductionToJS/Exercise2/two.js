@@ -2,4 +2,4 @@ function addition(a,b){
     return a+b;
 }
 
-console.log(addition(10,10))
+console.log(addition(40,30))

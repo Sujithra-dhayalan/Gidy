@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+    <link rel="stylesheet" href="/JournalProject/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One|Oswald" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="curtain"></div>
+            <h1 class="title">Welcome to Hogwarts</h1>
+            <div class="container">
+                <img src="/JournalProject/assets/output.png" alt="The magic Hat" class="hat">
+                <input type="text" id="password" placeholder="Enter your spell...">
+                <img src="/JournalProject/assets/hogwarts.jpeg" alt="Hogwarts" class="hogwarts"
+                    onclick="checkPassword()">
+
+            </div>
+
+
+
+            <div class="reveal">
+                <h2>You are a member of Gryffindor!</h2>
+                <img src="/JournalProject/assets/gryf.jpeg" alt="Gryffindor" onclick="nextPage()">
+            </div>
+
+            <div>
+                <img src="/JournalProject/assets/car.png" alt="HarryPotterCar" class="flying-car" id="flyingCar">
+            </div>
+        
+
+    </div>
+
+    <script src="/JournalProject/script.js"></script>
+
+</body>
+
+</html>

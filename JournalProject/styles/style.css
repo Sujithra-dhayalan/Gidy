@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffebc6;
+    font-family: "Oswald", Helvetica Neue;
+    color: #1d0a02;
+}
+
+.main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 10%;
+    flex-direction: row;
+    z-index: 0;
+}
+
+.hat {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+    animation: upAndDown 2.1s ease-in-out infinite;
+}
+
+/* for moving the hat up and down */
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+}
+
+.container input {
+    width: 400px;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+    font-family: "Oswald", Helvetica Neue;
+    padding-left: 20px;
+    position: relative;
+    border: 2px solid #1d0a02;
+}
+
+.reveal img {
+    margin-top: 30px;
+    height: 190px;
+}
+
+.reveal {
+    margin-top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.reveal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hogwarts {
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.curtain{
+    position: absolute;
+    height: 850px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+
+.flying-car {
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    z-index: 3;
+}
+
+.flying-car.fly {
+    animation: flyAcross 3s ease-in-out forwards;
+}
+
+ @keyframes flyAcross {
+    0% {
+        left: -200px;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+        bottom: 40%;
+        left: 20%;
+    }
+
+    50%{
+        left: 50%;
+    }
+
+    90% {
+        opacity: 1;
+        bottom: 90%;
+    }
+
+    100% {
+        left: 100%;
+        top: 0;
+        opacity: 0;
+    }
+
+} 
+
+.flying-car.fly {
+    animation: flyAcross 3s ease-in-out forwards;
+}

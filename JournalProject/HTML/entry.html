@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JournalProject</title>
     <link rel="stylesheet" href="/JournalProject/styles/entry.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One|Oswald" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Greetings Mam</h1>
+    <h1>Greetings Mam...</h1>
     <div class="main">
         <div>
             <img src="/JournalProject/assets/pen.png" alt="Click here to log the entry" title="Click to log the entry"
@@ -18,36 +22,42 @@
         </div>
 
         <!-- screen to appear when pressed te candle -->
-        <div class="logging">
-            <div id="logEntry">
-                <input type="date" placeholder="Date" id="date"> <br />
-                <textarea type="text" placeholder="description" id="description">
-
-                    </textarea>
-                <div class="bottles">
-                    <img src="/JournalProject/assets/delete.png" alt="Delete" title="Delete" class="buttons">
-                    <img src="/JournalProject/assets/save.png" alt="Save draft" title="Save draft" class="buttons">
-                </div>
-
-            </div>
-
-            <div>
-                <img src="/JournalProject/assets/candle.png" alt="candle" class="candle" title="save">
-            </div>
-        </div>
+        
 
         <!-- display -->
 
-        <div class="display">
+        <!-- <div class="display">
             <h2>Date:</h2>
-            <img src="/JournalProject/assets/envelope.jpeg" alt="envelope">
+            <img src="/JournalProject/assets/envelope.jpeg" alt="envelope" class="envelope">
+        </div> -->
+
+        <div class="envelope-container" id="envelope-container">
+            <!-- envelopes will be inserted here -->
+
         </div>
 
 
     </div>
+    <div class="logging">
+        <div id="logEntry">
+            <input type="date" placeholder="Date" id="date"> <br />
+            <textarea type="text" placeholder="description" id="description">
+
+                </textarea>
+            <div class="bottles">
+                <img src="/JournalProject/assets/delete.png" alt="Delete" title="Delete" class="buttons" id="delete">
+                <img src="/JournalProject/assets/save.png" alt="Save draft" title="Save draft" class="buttons" id="save">
+            </div>
+
+        </div>
+
+        <div>
+            <img src="/JournalProject/assets/candle.png" alt="candle" class="candle" title="save">
+        </div>
+    </div>
 
 
-
+    <script src="/JournalProject/script.js"></script>
 
 </body>
 

@@ -98,7 +98,7 @@ h1 {
     margin: 10px;
     width: 400px;
     border: none;
-    height: 500px;
+    height: 400px;
     background-color: rgba(255, 255, 255, 0.4);
     font-family: "Cedarville Cursive", cursive;
     font-weight: 100000000000px;
@@ -106,7 +106,7 @@ h1 {
 }
 
 #date:focus,
-#description:focus {
+#description:focus{
     outline: none;
 }
 
@@ -147,7 +147,7 @@ h1 {
     padding: 10px;
     width: 400px;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     cursor: pointer;
     color:#d8ba89;
@@ -160,4 +160,93 @@ h1 {
 
 .envelope {
     width: 350px;
+}
+
+/* for phone */
+
+@media (min-width:319px) and (max-width:480px){
+
+    .title{
+        font-size: 33px;
+        font-family: "Festive", cursive;
+    }
+    
+    .owl {
+        height: 150px;
+         
+    }
+    
+    .logging {
+        position: absolute;
+        display: none;
+
+    }
+
+    #logEntry {
+        background-image: url(/JournalProject/assets/letter1.jpeg);
+        background: url('/JournalProject/assets/letter1.jpeg') no-repeat center center/cover;
+        opacity: 0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    #date {
+        padding: 10px;
+        margin-top: 20px;
+        width: 1500px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.4);
+        font-family: "Cedarville Cursive", cursive;
+        font-weight: 100000000000px;
+        font-size: 20px;
+    }
+
+    #description {
+        padding: 10px;
+        margin: 10px;
+        width: 1000px;
+        border: none;
+        height: 2000px;
+        background-color: rgba(255, 255, 255, 0.4);
+        font-family: "Cedarville Cursive", cursive;
+        font-weight: 100000000000px;
+        font-size: 20px;
+    }
+
+    #date:focus,
+    #description:focus{
+        outline: none;
+    }
+
+    .candle {
+        height: 150px;
+        position: absolute;
+        bottom: 70px;
+        left: 400px;
+        cursor: pointer;
+        animation: upAndDown 2s ease-in-out infinite;
+    }
+
+    .bottles {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+
+    }
+
+    .buttons {
+        height: 70px;
+        cursor: pointer;
+    }
+
+    .envelope-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
 }

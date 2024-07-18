@@ -36,6 +36,7 @@ h1{
 .container {
     margin-top: 10%;
     flex-direction: row;
+    flex-wrap: wrap;
     z-index: 0;
 }
 
@@ -69,6 +70,13 @@ h1{
     border: 2px solid #1d0a02;
 }
 
+.hogwarts {
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 20px;
+}
+
 .reveal img {
     margin-top: 30px;
     height: 190px;
@@ -94,13 +102,6 @@ h1{
 .reveal.show {
     opacity: 1;
     visibility: visible;
-}
-
-.hogwarts {
-    height: 150px;
-    border-radius: 50%;
-    position: absolute;
-    margin-left: 20px;
 }
 
 .title {
@@ -162,3 +163,89 @@ h1{
 } 
 
 
+/* for the phone */
+@media (min-width:319px) and (max-width:480px) {
+    *{
+        margin: 10px;
+    }
+    
+    .title{
+        line-height: 120px;
+        letter-spacing: 10px;
+        text-align: center;
+        font-size: 130px; 
+        margin-left: 180px; 
+        border-radius: 40px;
+    }
+
+    .hat {
+        height: 100px;
+        width: 100px;
+        margin-left: 20px;
+        animation: upAndDown 2.1s ease-in-out infinite;
+        position: relative;
+        bottom:-70px;
+    }
+
+    .container input {
+        width: 200px;
+        height: 30px;
+        border-radius: 40px;
+        padding: 10px;
+        font-family: "Oswald", Helvetica Neue;
+        padding-left: 20px;
+        position: relative;
+        border: 2px solid #1d0a02;
+        margin-left: 140px;
+
+    }
+
+    .hogwarts {
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: 30px;
+        bottom: 230px;
+    }
+
+        
+    .reveal img {
+        margin-top: 30px;
+        height: 190px;
+        margin-left: 80px;
+    }
+
+    .reveal h2{
+        background-color: rgba(222,192,136,0.6);
+        padding: 10px; 
+        width: 300px;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .reveal {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 150px;
+        opacity: 0;
+        display: block;
+        transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    }
+
+        
+    .curtain{
+        position: absolute;
+        height: 1000%;
+        width: 200%;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 1;
+        display: none    }
+
+    
+        
+
+}

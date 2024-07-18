@@ -34,9 +34,6 @@ var candle = document.querySelector(".candle");
 // this line retrieves the data from the local storage of the browser everytime we load it
 var entries = JSON.parse( localStorage.getItem('journalEntries'))||[];
 
-
-
-
 function save(){
     var date= dateInput.value;
     var description = descriptionInput.value;

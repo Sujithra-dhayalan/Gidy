@@ -29,6 +29,7 @@ body::before {
 
 .nav{
     display: flex;
+    justify-content: space-between;
 
 }
 
@@ -43,6 +44,35 @@ h1 {
 .owl {
     height: 100px;
     
+}
+
+.greet{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.side{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#search{
+    opacity: 0.4;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.search-icon{
+    height: 70px;
+    margin: 20px;
 }
 
 .pen {

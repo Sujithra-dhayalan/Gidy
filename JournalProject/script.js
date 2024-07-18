@@ -31,6 +31,8 @@ var dateInput = document.getElementById("date");
 var descriptionInput = document.getElementById("description"); 
 var envelopeContainer = document.getElementById("envelope-container");
 var candle = document.querySelector(".candle");
+var searchInput = document.getElementById("search");
+var searchIcon = document.querySelector(".search-icon");
 // this line retrieves the data from the local storage of the browser everytime we load it
 var entries = JSON.parse( localStorage.getItem('journalEntries'))||[];
 
@@ -101,5 +103,27 @@ candle.addEventListener("click", function(){
     dateInput.value="";
     descriptionInput.value="";
 })
+
+searchIcon.addEventListener("click",function(){
+    var search = searchInput.value.toLowerCase();
+    console.log(search)
+    var envelopes = document.querySelectorAll(".display");
+    console.log("touch works");
+    envelopes.forEach(function(envelope){
+        console.log("function works")
+        var dateElements = envelope.querySelector("h2");
+
+        if (dateElements && dateElements.textContent.toLocaleLowerCase().includes(search)){
+            envelope.style.backgroundColor="yellow";
+
+            envelope.addEventListener("click",function(){
+                envelope.style.backgroundColor="transparent";
+            })
+        }
+        else{
+            console.log("match not found");
+        }
+    });
+});
 
 loadEntries();

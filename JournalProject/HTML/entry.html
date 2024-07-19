@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JournalProject</title>
     <link rel="stylesheet" href="/JournalProject/styles/entry.css">
+    <link rel="icon" href="/JournalProject/assets/fevi.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
@@ -35,9 +36,6 @@
             <input type="search" id="search">
             <img src="/JournalProject/assets/search-icon.png" alt="Search icon" class="search-icon">
         </div>
-
-
-
     </div>
 
 
@@ -47,7 +45,12 @@
                 class="pen" id="pen">
         </div>
 
-        <!-- screen to appear when pressed te candle -->
+        <div class="player">
+            <audio src="/JournalProject/assets/harrypotterBGM.mp3" loop="true" autoplay="true" id="music"></audio>
+            <img src="/JournalProject/assets/playerEntry.png" alt="Click here to play/pause the music" class="player" onclick="musicPlayer()">
+        </div>
+
+        <!-- screen to appear when pressed the pen & candle -->
 
 
         <!-- display -->
@@ -65,8 +68,6 @@
                 </div> -->
 
         </div>
-
-
     </div>
 
     <!-- page to appear for loggin in the data -->
@@ -78,7 +79,6 @@
                 <img src="/JournalProject/assets/delete.png" alt="Delete" title="Delete" class="buttons" id="delete">
                 <img src="/JournalProject/assets/save.png" alt="Save draft" title="Save" class="buttons" id="save">
             </div>
-
         </div>
 
         <div>

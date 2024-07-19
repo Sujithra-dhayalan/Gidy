@@ -1,3 +1,5 @@
+/* CSS styling for the entry-log page */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,26 +26,22 @@ body::before {
 .main {
     margin: 20px;
     display: inline-block;
-
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
-
 }
 
 h1 {
     color: bisque;
     font-family: "Festive", cursive;
     letter-spacing: 4px;
-    margin-top: 30px;
-   
+    margin-top: 30px;  
 }
 
 .owl {
-    height: 100px;
-    
+    height: 100px;   
 }
 
 .greet{
@@ -92,17 +90,24 @@ h1 {
     50% {
         transform: translateY(20px);
     }
+}
 
+.player{
+    height: 140px;
+    position: fixed;
+    z-index: 0;
+    left: 10px;
+    bottom: 10px;
+    cursor: pointer;
 }
 
 .logging {
     position: absolute;
     display: none;
-
 }
 
 #logEntry {
-    background-image: url(/JournalProject/assets/letter1.jpeg);
+    /* background-image: url(/JournalProject/assets/letter1.jpeg); */
     background: url('/JournalProject/assets/letter1.jpeg') no-repeat center center/cover;
     opacity: 0.8;
     display: flex;
@@ -123,6 +128,9 @@ h1 {
     font-size: 20px;
 }
 
+.date{
+    background-color: yellow;
+}
 #description {
     padding: 10px;
     margin: 10px;

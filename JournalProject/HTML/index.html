@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal</title>
-    <link rel="stylesheet" href="/JournalProject/styles/style.css">
+    <link rel="stylesheet" href="/JournalProject/styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One|Oswald" rel="stylesheet">
+    <link rel="icon" href="/JournalProject/assets/fevi.png">
 
 </head>
 
@@ -20,25 +21,29 @@
                 <input type="text" id="password" placeholder="Enter your spell..." autocomplete="off">
                 <img src="/JournalProject/assets/hogwarts.jpeg" alt="Hogwarts" class="hogwarts"
                     onclick="checkPassword()">
-
+                    <div>
+                        <audio loop="true" src="/JournalProject/assets/harrypotterBGM.mp3" id="music"></audio>
+                        <img src="/JournalProject/assets/playerEntry.png" alt="Click to play the BGM" class="player" onclick="musicPlayer()">
+                    </div>
             </div>
 
 
 
             <div class="reveal">
                 <h2>You are a member of Gryffindor!</h2>
-                <img src="/JournalProject/assets/gryf.png" alt="Gryffindor" onclick="nextPage()">
+                <img src="/JournalProject/assets/gryf.png" alt="Gryffindor" id="lion" onclick="nextPage()">
             </div>
 
             <div>
                 <img src="/JournalProject/assets/car.png" alt="HarryPotterCar" class="flying-car" id="flyingCar">
             </div>
+
+            
         
 
     </div>
 
     <script src="/JournalProject/script.js"></script>
-
 </body>
 
 </html>

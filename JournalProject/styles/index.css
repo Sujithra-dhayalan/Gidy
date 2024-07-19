@@ -1,3 +1,5 @@
+/* CSS Styling for the login page*/
+
 * {
     margin: 0;
     padding: 0;
@@ -67,7 +69,15 @@ h1{
     font-family: "Oswald", Helvetica Neue;
     padding-left: 20px;
     position: relative;
-    border: 2px solid #1d0a02;
+    border: none;
+    /* background-color: rgba(255,255,255,0.5); */
+    background-color: rgba(0,20,0,0.3);
+    font-size: 20px;
+    color: #d7ba82;
+}
+
+input:focus{
+    outline: none;
 }
 
 .hogwarts {
@@ -75,6 +85,15 @@ h1{
     border-radius: 50%;
     position: absolute;
     margin-left: 20px;
+}
+
+.player{
+    height: 150px;
+    position: fixed;
+    z-index: 0;
+    left: 10px;
+    bottom: 10px;
+    cursor: pointer;
 }
 
 .reveal img {
@@ -110,7 +129,7 @@ h1{
 
 .curtain{
     position: absolute;
-    height: 850px;
+    height: 120%;
     width: 100%;
     background-color: black;
     opacity: 0.6;
@@ -243,9 +262,6 @@ h1{
         background-color: black;
         opacity: 0.6;
         z-index: 1;
-        display: none    }
-
-    
-        
+        display: none}
 
 }
